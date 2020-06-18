@@ -1,7 +1,7 @@
 <?php 
 $fileLevel = "../";
 $title = "Online calculator";
-include "../templates/header.php" 
+include "../templates/header" 
 ?>
 
 <main id="main">
@@ -14,7 +14,7 @@ include "../templates/header.php"
 		$sectionH1 = "My calculator";
 		$sectionP = "You can calculate numbers below.";
 		$otherClasses = "inset-background-cover";
-		include "../templates/hero.php"
+		include "../templates/hero"
     ?>	
     
     <!-- Calculator section -->
@@ -44,7 +44,7 @@ include "../templates/header.php"
     </div>
 
     <!-- Javascript -->
-    <script src="<?php echo $fileLevel ?>js/calculator.js"></script>
+    <script src="/js/calculator.js"></script>
 </main>
 
-<?php include "../templates/footer.php" ?>
+<?php include "../templates/footer" ?>

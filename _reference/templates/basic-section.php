@@ -6,7 +6,7 @@
 	$sectionH2 = "Deej Potter Designs";
 	$sectionP = "Your own personal web designer. <br>Prices start at $100. <br><strong>Contact me now!</strong>";
 	$otherClasses = "";
-	include "templates/basic-section.php"
+	include "templates/basic-section"
  -->
 
 <section class="bg-<?php echo $bgColour ?> text-<?php echo $textColour ?> py-5 <?php echo $otherClasses ?>" style='background-image:url(<?php echo $bgImage ?>);'>

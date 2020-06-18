@@ -1,7 +1,7 @@
 <?php 
 $fileLevel = "";
 $title = "Thank you";
-include "templates/header.php" 
+include "templates/header" 
 ?>
 
 <!-- Event snippet for Submit lead form conversion page -->
@@ -15,11 +15,11 @@ include "templates/header.php"
 		<div class="row">
 			<div class="col-md">
 				<h1>Thank you! I'll get back to you soon.</h1>
-				<a href= "<?php echo $fileLevel ?>index.php">Back home</a>
+				<a href= "/index">Back home</a>
 			</div>
 		</div>
 	</section>
 
 </main>
 
-<?php include "templates/footer.php" ?>
+<?php include "templates/footer" ?>

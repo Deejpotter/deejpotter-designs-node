@@ -1,7 +1,7 @@
 <?php 
 $fileLevel = "../";
 $title = "Breakout clone | Deej Potter Designs";
-include "../templates/header.php" 
+include "../templates/header" 
 ?>
 
 <main id="main">	
@@ -14,16 +14,16 @@ include "../templates/header.php"
 		$sectionH1 = "Breakout clone";
 		$sectionP = "I made this to practice Javascript. It's pretty rusty but it was fun to make and it might be interesting to play.";
 		$otherClasses = "inset-background-cover";
-		include "../templates/hero.php"
+		include "../templates/hero"
     ?>	
 
     <!-- Content section -->
     <section class="container-fluid">
         <canvas id="myCanvas" width="480" height="320"></canvas>
 
-        <script src="<?php echo $fileLevel ?>js/breakout.js"></script>
+        <script src="/js/breakout.js"></script>
     </section>
 	
 </main>
 
-<?php include "../templates/footer.php" ?>
+<?php include "../templates/footer" ?>

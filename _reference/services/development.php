@@ -1,7 +1,7 @@
 <?php
 $fileLevel = "../";
 $title = "Design";
-include "../templates/header.php" 
+include "../templates/header" 
 ?>
 
 <main id="main">
@@ -34,4 +34,4 @@ include "../templates/header.php"
 		
 </main>
 
-<?php include "../templates/footer.php" ?>
+<?php include "../templates/footer" ?>

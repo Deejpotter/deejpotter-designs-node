@@ -2,7 +2,7 @@
 $fileLevel = "";
 $title = "Pricing | Deej Potter Designs";
 
-include "./templates/header.php" 
+include "./templates/header" 
 ?>
 
 
@@ -16,7 +16,7 @@ include "./templates/header.php"
 		$sectionH1 = "Prices";
 		$sectionP = "On this page you can find information about my prices as well as a form to get a quick quote.";
 		$otherClasses = "inset-background-cover";
-		include "templates/hero.php"
+		include "templates/hero"
 	?>		
 
 	<!-- Basic section -->
@@ -30,7 +30,7 @@ include "./templates/header.php"
 		I also have varying levels of service after your website is finished so you can be sure you will never be left 
 		not knowing what to do next.";
 		$otherClasses = "";
-		include "templates/basic-section.php"
+		include "templates/basic-section"
 	?>
 
 	<!-- Content section -->
@@ -83,7 +83,7 @@ include "./templates/header.php"
 					</div>
 					<div>
 						<p>If this sounds good or you want a more accurate quote click the button below to get started.</p>
-						<a href="contact.php" class="btn btn-primary shadow">Get a quote</a>
+						<a href="contact" class="btn btn-primary shadow">Get a quote</a>
 					</div>	
 				</form>
 			</div>
@@ -103,4 +103,4 @@ include "./templates/header.php"
 	frmvalidator.addValidation("hosting","req"); ; 
 </script>	
 
-<?php include "./templates/footer.php" ?>
+<?php include "./templates/footer" ?>

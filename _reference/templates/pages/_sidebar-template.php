@@ -1,7 +1,7 @@
 <?php 
 $fileLevel = "";
 $title = "Home";
-include "./templates/header.php" 
+include "./templates/header" 
 ?>
 
 <main id="sidebar">
@@ -29,13 +29,13 @@ include "./templates/header.php"
 			<div>
 				<h3>Sidebar</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis turpis pretium, congue augue ut, pellentesque dui. Maecenas condimentum volutpat arcu, at finibus purus congue sed. Pellentesque tristique iaculis gravida.</p>
-				<a href="<?php echo $fileLevel ?>index.html">Other page</a>
+				<a href="/index.html">Other page</a>
 				<i class="fas fa-chevron-right"></i>
 			</div>
 			<div>
 				<h3>Sidebar</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis turpis pretium, congue augue ut, pellentesque dui. Maecenas condimentum volutpat arcu, at finibus purus congue sed. Pellentesque tristique iaculis gravida.</p>
-				<a href="<?php echo $fileLevel ?>index.html">Other page</a>
+				<a href="/index.html">Other page</a>
 				<i class="fas fa-chevron-right"></i>
 			</div>
 		</aside>
@@ -43,4 +43,4 @@ include "./templates/header.php"
 		
 </main>
 
-<?php include "./templates/footer.php" ?>
+<?php include "./templates/footer" ?>

@@ -1,7 +1,7 @@
 <?php
 $fileLevel = "";
 $title = "About me";
-include "templates/header.php" 
+include "templates/header" 
 ?>
 
 <main id="main">
@@ -14,7 +14,7 @@ include "templates/header.php"
 		$sectionH1 = "All about me";
 		$sectionP = "If you want to know more about my life you've come to the right place.";
 		$otherClasses = "inset-background-cover";
-		include "templates/hero.php"
+		include "templates/hero"
 	?>	
 
 	<section class="container py-4">
@@ -42,7 +42,7 @@ include "templates/header.php"
 
 					<h2>I love helping people</h2>
 					<p>If you want to know anything else about me just send me a message. I'd love to answer your questions.</p>
-					<a class="btn btn-primary shadow" href="<?php echo $fileLevel ?>contact.php">Contact me</a>
+					<a class="btn btn-primary shadow" href="/contact">Contact me</a>
 				</div>
 			</div>
 		</div>
@@ -50,4 +50,4 @@ include "templates/header.php"
 		
 </main>
 
-<?php include "templates/footer.php" ?>
+<?php include "templates/footer" ?>

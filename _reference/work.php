@@ -1,7 +1,7 @@
 <?php 
 $fileLevel = "";
 $title = "My work";
-include "./templates/header.php" 
+include "./templates/header" 
 ?>
 
 <main id="index">
@@ -16,7 +16,7 @@ include "./templates/header.php"
 		and my reasons for the decisions I made where it's applicable. As always, if you have any questions about 
 		the things in here feel free to contact me.";
 		$otherClasses = "inset-background-cover";
-		include "templates/hero.php"
+		include "templates/hero"
 	?>		
 	
 	<!-- Index section -->
@@ -26,9 +26,9 @@ include "./templates/header.php"
 		$bgImage = "";
 		$sectionH2 = "Online calculator";
 		$sectionP = "This is something I made for a bit of practice. It's an online calculator. It's pretty self-explanitory, it can do basic math problems.";
-		$sectionButtonLink = "work/calculator.php";
+		$sectionButtonLink = "work/calculator";
 		$otherClasses = "";
-		include "templates/index-section.php"
+		include "templates/index-section"
 	?>	
 
 	<!-- Index section -->
@@ -38,9 +38,9 @@ include "./templates/header.php"
 		$bgImage = "";
 		$sectionH2 = "Breakout clone";
 		$sectionP = "I made this small game to practice Javascript. It's pretty rusty but it was fun to make and it might be interesting to play.";
-		$sectionButtonLink = "work/breakout.php";
+		$sectionButtonLink = "work/breakout";
 		$otherClasses = "";
-		include "templates/index-section.php"
+		include "templates/index-section"
 	?>	
 
 	<!-- Index section -->
@@ -50,11 +50,11 @@ include "./templates/header.php"
 		$bgImage = "";
 		$sectionH2 = "Breakout clone";
 		$sectionP = "I made this small game to practice Phaser. It's mostly the same as the other breakout game but there are a few extras added in.";
-		$sectionButtonLink = "work/breakout-phaser.php";
+		$sectionButtonLink = "work/breakout-phaser";
 		$otherClasses = "";
-		include "templates/index-section.php"
+		include "templates/index-section"
 	?>	
 	
 </main>
 
-<?php include "./templates/footer.php" ?>
+<?php include "./templates/footer" ?>

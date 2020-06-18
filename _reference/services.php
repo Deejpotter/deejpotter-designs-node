@@ -1,7 +1,7 @@
 <?php 
 $fileLevel = "";
 $title = "Services";
-include "./templates/header.php" 
+include "./templates/header" 
 ?>
 
 <main id="index">
@@ -24,7 +24,7 @@ include "./templates/header.php"
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis turpis pretium, congue augue ut, pellentesque dui. Maecenas condimentum volutpat arcu, at finibus purus congue sed. Pellentesque tristique iaculis gravida.</p>
 				</div>
 			</div>
-			<a href= "<?php echo $fileLevel ?>index.html">
+			<a href= "/index.html">
 				<i class="fa fa-chevron-right"></i>
 			</a>
 		</div>
@@ -35,7 +35,7 @@ include "./templates/header.php"
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis turpis pretium, congue augue ut, pellentesque dui. Maecenas condimentum volutpat arcu, at finibus purus congue sed. Pellentesque tristique iaculis gravida.</p>
 				</div>
 			</div>
-			<a href= "<?php echo $fileLevel ?>index.html">
+			<a href= "/index.html">
 				<i class="fa fa-chevron-right"></i>
 			</a>
 		</div>
@@ -46,7 +46,7 @@ include "./templates/header.php"
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis turpis pretium, congue augue ut, pellentesque dui. Maecenas condimentum volutpat arcu, at finibus purus congue sed. Pellentesque tristique iaculis gravida.</p>
 				</div>
 			</div>
-			<a href= "<?php echo $fileLevel ?>index.html">
+			<a href= "/index.html">
 				<i class="fa fa-chevron-right"></i>
 			</a>
 		</div>
@@ -54,4 +54,4 @@ include "./templates/header.php"
 	
 </main>
 
-<?php include "./templates/footer.php" ?>
+<?php include "./templates/footer" ?>

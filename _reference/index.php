@@ -1,7 +1,7 @@
 <?php 
 $fileLevel = "";
 $title = "Your personal web designer | Deej Potter Designs";
-include "templates/header.php" 
+include "templates/header" 
 ?>
 
 <main id="main">
@@ -14,7 +14,7 @@ include "templates/header.php"
 		$sectionH1 = "Deej Potter Designs";
 		$sectionP = "Your own personal web designer. <br>Prices start at $100. <br><strong>Contact me now!</strong>";
 		$otherClasses = "inset-background-cover";
-		include "templates/home-hero.php"
+		include "templates/home-hero"
 	?>
 
 	<!-- Basic section -->
@@ -28,7 +28,7 @@ include "templates/header.php"
 		I also have varying levels of service after your website is finished so you can be sure you will never be left 
 		not knowing what to do next.";
 		$otherClasses = "";
-		include "templates/basic-section.php"
+		include "templates/basic-section"
 	?>
 
 	<!-- Basic section -->
@@ -43,7 +43,7 @@ include "templates/header.php"
 				and you’re free to do whatever you want with it but if you need help with that I offer a few levels 
 				of service from as little as $10 per month. You can read more about my prices on my pricing page.";
 		$otherClasses = "inset-background-left";
-		include "templates/basic-section.php"
+		include "templates/basic-section"
 	?>
 
 	<!-- Basic section -->
@@ -57,7 +57,7 @@ include "templates/header.php"
 				I wanted to start my own business, to spend more time with them. If you’d like to know more 
 				check out my personal page.";
 		$otherClasses = "";
-		include "templates/basic-section.php"
+		include "templates/basic-section"
 	?>
 
 	<!-- Button section -->
@@ -68,12 +68,12 @@ include "templates/header.php"
 		$sectionH2 = "Ready to get started?";
 		$sectionP = "Maybe you just have some questions. <br>Either way, contact me and let me know. I’d love to hear from you.";
 		$buttonColour = "secondary";
-		$sectionButtonLink = "contact.php";
+		$sectionButtonLink = "contact";
 		$sectionButtonText = "Contact me now";
 		$otherClasses = "inset-background-right";
-		include "templates/button-section.php"
+		include "templates/button-section"
 	?>
 		
 </main>
 
-<?php include "templates/footer.php" ?>
+<?php include "templates/footer" ?>

@@ -1,7 +1,7 @@
 <?php 
 $fileLevel = "";
 $title = "Contact me";
-include "templates/header.php" 
+include "templates/header" 
 ?>
 
 <main id="main">
@@ -15,7 +15,7 @@ include "templates/header.php"
 		$sectionP = "Please fill out the form below and I'll get back to you as soon as I can. 
 		I can't wait to hear from you.";
 		$otherClasses = "inset-background-cover";
-		include "templates/hero.php"
+		include "templates/hero"
 	?>
 	
 	<section class="container py-5">
@@ -26,7 +26,7 @@ include "templates/header.php"
 				you about your project, I won't share it with anyone or use it for any other reason.</p>
 			</div>
 			<div class="col-md">
-				<form id="contact-page-form" name="emailform" action="form-post.php" method="post">
+				<form id="contact-page-form" name="emailform" action="form-post" method="post">
 					<div class="form-group">
 						<label for='name'>Enter Name: </label>
 						<input class="form-control shadow" type="text" name="name">
@@ -71,4 +71,4 @@ include "templates/header.php"
 		
 </main>
 
-<?php include "templates/footer.php" ?>
+<?php include "templates/footer" ?>

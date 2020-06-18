@@ -7802,7 +7802,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
             };
 
             /**
- * Compute centroid of a triangle spanned by vectors a,b,c. See http://easycalculation.com/analytical/learn-centroid.php
+ * Compute centroid of a triangle spanned by vectors a,b,c. See http://easycalculation.com/analytical/learn-centroid
  * @method centroid
  * @static
  * @param  {Array} out
@@ -13977,7 +13977,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
  *     // Start animation loop
  *     requestAnimationFrame(animate);
  *
- * @see http://bulletphysics.org/mediawiki-1.5.8/index.php/Stepping_The_World
+ * @see http://bulletphysics.org/mediawiki-1.5.8/index/Stepping_The_World
  */
             World.prototype.step = function (dt,timeSinceLastCalled,maxSubSteps)
             {

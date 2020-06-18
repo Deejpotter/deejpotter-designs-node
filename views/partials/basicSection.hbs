@@ -1,0 +1,18 @@
+{{!-- 
+	-----EXAMPLE-----
+	$bgColour = "primary";
+	$bgImage = "images/laptop-60-opacity.png";
+	$textColour = "dark";
+	$sectionH2 = "Deej Potter Designs";
+	$sectionP = "Your own personal web designer. <br>Prices start at $100. <br><strong>Contact me now!</strong>";
+	$otherClasses = "";
+	include "templates/basic-section"
+--}}
+
+
+<section class="bg-{{bgColour}} text-{{textColour}} py-5 {{otherClasses}}" style='background-image:url({{bgImage}});'>
+	<div class="container">
+		<h2>{{sectionH2}}</h2>
+		<p class="">{{sectionP}}</p>
+	</div>
+</section>

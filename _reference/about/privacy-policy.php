@@ -1,7 +1,7 @@
 <?php 
 $fileLevel = "../";
 $title = "Privacy policy | Deej Potter Designs";
-include "../templates/header.php" 
+include "../templates/header" 
 ?>
 
 <div class="container">
@@ -165,4 +165,4 @@ include "../templates/header.php"
     </div>
 </div>
 
-<?php include "../templates/footer.php" ?>
+<?php include "../templates/footer" ?>
