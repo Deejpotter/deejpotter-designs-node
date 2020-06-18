@@ -5,7 +5,7 @@
 				<div class= "col-md">
 					<h3>Feedback</h3>
 					<p>Got some feedback for me?</p>
-					<a class= "btn btn-primary shadow" href= "<?php echo $fileLevel ?>contact.php">Let me know</a>
+					<a class= "btn btn-primary shadow" href= "../public/contact.php">Let me know</a>
 				</div>
 				<div class= "col-md text-center">
 					<h3>Connect with me</h3>
@@ -15,9 +15,9 @@
 				</div>
 				<div class= "col-md text-right">
 					<h3>Policies</h3>
-					<a href= "<?php echo $fileLevel ?>about/privacy-policy.php">Privacy policy</a>
+					<a href= "../public/about/privacy-policy.php">Privacy policy</a>
 					<br>
-					<a href= "<?php echo $fileLevel ?>about/terms.php">Terms and conditions</a>
+					<a href= "../public/about/terms.php">Terms and conditions</a>
 				</div>
 			</div>
 		</div>
