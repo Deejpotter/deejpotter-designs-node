@@ -50,4 +50,74 @@ router.get('/', function(req, res, next) {
   });
 });
 
+/* GET contact page. */
+router.get('/contact', function(req, res, next) {
+  res.render('contact', { 
+    heroSection: {
+      bgColour: "primary",
+      textColour: "light",
+      bgImage: "images/contact-image-50-800x600.png",
+      sectionH1: "Ready to talk about your project?",
+      sectionP: "Please fill out the form below and I'll get back to you as soon as I can. I can't wait to hear from you.",
+      otherClasses: "inset-background-cover"
+    }
+  });
+});
+
+/* GET pricing page. */
+router.get('/pricing', function(req, res, next) {
+  res.render('pricing', { 
+    heroSection: {
+      bgColour: "primary",
+      textColour: "light",
+      bgImage: "images/pricing-image-50-900x600.png",
+      sectionH1: "All about me",
+      sectionP: "If you want to know more about my life you've come to the right place.",
+      otherClasses: "inset-background-cover"
+    }
+  });
+});
+
+/* GET about page. */
+router.get('/about', function(req, res, next) {
+  res.render('about', { 
+    heroSection: {
+      bgColour: "primary",
+      textColour: "light",
+      bgImage: "images/pricing-image-50-900x600.png",
+      sectionH1: "All about me",
+      sectionP: "If you want to know more about my life you've come to the right place.",
+      otherClasses: "inset-background-cover"
+    }
+  });
+});
+
+/* GET about page. */
+router.get('/privacyPolicy', function(req, res, next) {
+  res.render('privacyPolicy', { 
+    heroSection: {
+      bgColour: "primary",
+      textColour: "light",
+      bgImage: "images/pricing-image-50-900x600.png",
+      sectionH1: "All about me",
+      sectionP: "If you want to know more about my life you've come to the right place.",
+      otherClasses: "inset-background-cover"
+    }
+  });
+});
+
+/* GET about page. */
+router.get('/terms', function(req, res, next) {
+  res.render('terms', { 
+    heroSection: {
+      bgColour: "primary",
+      textColour: "light",
+      bgImage: "images/pricing-image-50-900x600.png",
+      sectionH1: "All about me",
+      sectionP: "If you want to know more about my life you've come to the right place.",
+      otherClasses: "inset-background-cover"
+    }
+  });
+});
+
 module.exports = router;
