@@ -76,7 +76,7 @@ var transporter = nodemailer.createTransport({
 });
 var mailOptions = {
   from: 'deejpotter@gmail.com',
-  to: 'deepotter@gmail.com',
+  to: 'deejpotter@gmail.com',
   subject: 'Sending Email using Node.js',
   text: 'That was easy!'
 };
@@ -87,7 +87,15 @@ transporter.sendMail(mailOptions, function(error, info){
     console.log('Email sent: ' + info.response);
   }
 });
-res.end();
+
+ res.redirect('/thankYou')
+});
+
+/* GET thank you page. */
+router.get('/thankYou', function(req, res, next) {
+  res.render('thankYou', {
+
+  });
 });
 
 /* GET pricing page. */
