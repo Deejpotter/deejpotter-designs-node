@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
 
 
 /* GET home page. */
@@ -67,6 +68,9 @@ router.get('/contact', function(req, res, next) {
 });
 /* POST contact page. */
 router.post('/contact', function(req, res, next) {
+  var name = JSON.stringify(req.body.name)
+  var email = JSON.stringify(req.body.email)
+  var message = JSON.stringify(req.body.message)
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -78,8 +82,11 @@ var mailOptions = {
   from: 'deejpotter@gmail.com',
   to: 'deejpotter@gmail.com',
   subject: 'Sending Email using Node.js',
-  text: 'That was easy!'
+  text: ''
 };
+console.log(mailOptions)
+mailOptions.text = name + " " + email + " " + message;
+console.log(mailOptions)
 transporter.sendMail(mailOptions, function(error, info){
   if (error) {
     console.log(error);
@@ -87,6 +94,7 @@ transporter.sendMail(mailOptions, function(error, info){
     console.log('Email sent: ' + info.response);
   }
 });
+
 
  res.redirect('/thankYou')
 });
