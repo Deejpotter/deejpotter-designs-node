@@ -10,6 +10,9 @@ var workRouter = require('./routes/work');
 
 var app = express();
 
+const bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({extended: true}))
+
 // Register handlebars partials
 var hbs = require('hbs');
 hbs.registerPartials(__dirname + '/views/partials');

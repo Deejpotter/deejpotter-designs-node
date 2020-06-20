@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var nodemailer = require('nodemailer');
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -62,6 +64,30 @@ router.get('/contact', function(req, res, next) {
       otherClasses: "inset-background-cover"
     }
   });
+});
+/* POST contact page. */
+router.post('/contact', function(req, res, next) {
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'deejpotter@gmail.com',
+    pass: 'Pokemon1990'
+  }
+});
+var mailOptions = {
+  from: 'deej@deejpotterdesigns.com',
+  to: 'deepotter@gmail.com',
+  subject: 'Sending Email using Node.js',
+  text: 'That was easy!'
+};
+transporter.sendMail(mailOptions, function(error, info){
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Email sent: ' + info.response);
+  }
+});
+res.end();
 });
 
 /* GET pricing page. */
