@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "devstart": "nodemon ./bin/www",
+    "start": "node ./www",
+    "devstart": "nodemon ./www",
     "serverstart": "set DEBUG=deejpotterdesigns-node:* & npm run devstart",
     "start_local": "node -r dotenv/config server.js"
   },
