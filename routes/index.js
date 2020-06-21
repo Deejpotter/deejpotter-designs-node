@@ -72,14 +72,14 @@ router.post('/contact', function(req, res, next) {
   var email = JSON.stringify(req.body.email)
   var message = JSON.stringify(req.body.message)
 var transporter = nodemailer.createTransport({
-  service: 'gmail',
+  service: 'Hotmail',
   auth: {
-    user: 'deejpotter@gmail.com',
-    pass: 'Pokemon1990'
+    user: 'deejpotterdesigns@hotmail.com',
+    pass: 'Daniel1990'
   }
 });
 var mailOptions = {
-  from: 'deejpotter@gmail.com',
+  from: 'deejpotterdesigns@hotmail.com',
   to: 'deejpotter@gmail.com',
   subject: 'Sending Email using Node.js',
   text: ''
@@ -94,8 +94,6 @@ transporter.sendMail(mailOptions, function(error, info){
     console.log('Email sent: ' + info.response);
   }
 });
-
-
  res.redirect('/thankYou')
 });
 
