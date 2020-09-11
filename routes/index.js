@@ -11,8 +11,8 @@ router.get('/', function(req, res, next) {
       bgColour: "primary",
       textColour: "light",
       bgImage: "images/laptop-60-opacity.png",
-      sectionH1: "Deej Potter Designs",
-      sectionP: "Your own personal web designer. Prices start at $100. Contact me now!",
+      sectionH1: "Deej Potter",
+      sectionP: "My personal website",
       otherClasses: "inset-background-cover"
     },
     firstSection: {
